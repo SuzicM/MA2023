@@ -26,10 +26,21 @@ public class MainActivity extends AppCompatActivity {
                 openPrijava();
             }
         });
+        buttonRegistracija.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRegistracija();
+            }
+        });
     }
 
     public void openPrijava() {
         Intent intent = new Intent(this, PrijavaActivity.class);
+        startActivity(intent);
+    }
+
+    public void openRegistracija(){
+        Intent intent = new Intent(this, RegistracijaActivity.class);
         startActivity(intent);
     }
 }

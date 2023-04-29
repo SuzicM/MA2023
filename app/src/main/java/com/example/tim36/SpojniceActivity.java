@@ -1,4 +1,16 @@
 package com.example.tim36;
 
-public class SpojniceActivity {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SpojniceActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_prijava);
+
+
+    }
 }
+
