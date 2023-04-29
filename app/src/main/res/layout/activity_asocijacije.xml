@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tim36.AsocijacijeActivity">
+
+    <TextView
+        android:id="@+id/textAsocijacije"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asocijacije"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="TP:"
+        android:layout_below="@+id/textAsocijacije"
+        android:layout_toLeftOf="@+id/editTextVreme"
+        />
+
+    <EditText
+        android:id="@+id/editTextVreme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Vreme:"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textAsocijacije"/>
+
+    <EditText
+        android:id="@+id/editTextPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="PP:"
+        android:layout_below="@+id/textAsocijacije"
+        android:layout_toRightOf="@id/editTextVreme"/>
+
+    <LinearLayout
+        android:id="@+id/linearPolja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/editTextVreme">
+
+
+        <LinearLayout
+            android:id="@+id/AB"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/kolonaA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/buttonA1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A1"/>
+                <Button
+                    android:id="@+id/buttonA2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A2"/>
+                <Button
+                    android:id="@+id/buttonA3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A3"/>
+                <Button
+                    android:id="@+id/buttonA4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A4"/>
+
+                    <EditText
+                        android:id="@+id/editTextA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:text="A"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kolonaB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/buttonB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B1"/>
+                <Button
+                    android:id="@+id/buttonB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B2"/>
+                <Button
+                    android:id="@+id/buttonB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B3"/>
+                <Button
+                    android:id="@+id/buttonB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B4"/>
+
+                <EditText
+                    android:id="@+id/editTextB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="B"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextKonacno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Konacno"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/cd"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/kolonaC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/buttonC1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C1"/>
+                <Button
+                    android:id="@+id/buttonC2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C2"/>
+                <Button
+                    android:id="@+id/buttonC3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C3"/>
+                <Button
+                    android:id="@+id/buttonC4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C4"/>
+
+                <EditText
+                    android:id="@+id/editTextC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="C"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kolonaD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/buttonD1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A1"/>
+                <Button
+                    android:id="@+id/buttonD2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A2"/>
+                <Button
+                    android:id="@+id/buttonD3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A3"/>
+                <Button
+                    android:id="@+id/buttonD4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A4"/>
+
+                <EditText
+                    android:id="@+id/editTextD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="D"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

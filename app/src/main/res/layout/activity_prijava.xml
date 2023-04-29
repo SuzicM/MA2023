@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tim36.PrijavaActivity">
+
+    <TextView
+        android:id="@+id/textPrijava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prijava"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/buttonPrijava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prijava"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/buttonRegistracija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registracija"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonPrijava"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textPrijava"
+        android:hint="Korisnicko ime"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textUsername"
+        android:hint="Lozinka"
+        android:layout_marginTop="5dp"
+
+        />
+
+
+</RelativeLayout>

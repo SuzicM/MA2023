@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tim36.RegistracijaActivity">
+
+    <TextView
+        android:id="@+id/textRegistracija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registracija"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:hint="E_mail"
+        android:layout_below="@+id/textRegistracija"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Korisnicko ime"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextTextEmailAddress"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:hint="Lozinka"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Ponovljena lozinka"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextTextPassword"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/buttonRegistracija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registracija"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextTextPassword2"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/buttonPrijava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prijava"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonRegistracija"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+</RelativeLayout>

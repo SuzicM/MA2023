@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tim36.KoZnaZnaActivity">
+
+    <TextView
+        android:id="@+id/textKoZnaZna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ko zna, zna"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/editTextTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="TP:"
+            android:layout_toLeftOf="@+id/editTextVreme"
+            android:layout_below="@+id/textKoZnaZna"/>
+
+        <EditText
+            android:id="@+id/editTextVreme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Vreme:"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textKoZnaZna"/>
+
+        <EditText
+            android:id="@+id/editTextPP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="PP:"
+            android:layout_below="@+id/textKoZnaZna"
+            android:layout_toRightOf="@+id/editTextVreme"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextPitanje"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/buttonD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:layout_toRightOf="@+id/button3"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextPitanje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/editTextVreme"
+        android:hint="Pitanje"/>
+
+
+</RelativeLayout>
